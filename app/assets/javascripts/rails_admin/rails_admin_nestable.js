@@ -1,4 +1,4 @@
-jQuery(function() {
+$(document).on('rails_admin.dom_ready', function() {
   var $tree_nodes, $tree_nodes_max_depth, $tree_nodes_options, $update_button, updateNodes;
   updateNodes = function(tree_nodes) {
     var serialized_tree;
