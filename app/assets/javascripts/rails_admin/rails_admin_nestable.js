@@ -31,5 +31,6 @@ $(document).on('rails_admin.dom_ready', function() {
   }
   $tree_nodes.nestable($tree_nodes_options);
   $('.dd-item').addClass('dd-collapsed');
-  $('.dd-item > button').toggle();
+  $('.dd-item button[data-action="collapse"]').hide();
+  $('.dd-item button[data-action="expand"]').show();
 });
